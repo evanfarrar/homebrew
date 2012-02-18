@@ -1,247 +1,260 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
-	
-	<head>
-		<meta charset="utf-8">
-		
-		<title>reveal.js</title>
 
-		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
-		<meta name="author" content="Hakim El Hattab">
-		
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Homebrew</title>
 
-		<link rel="stylesheet" href="lib/zenburn.css">
-	</head>
-	
-	<body>
-		
-		<div id="reveal">
-			
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">A CSS 3D Slideshow</h3>
-					<script>
-						// Delicously hacky. Look away.
-						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
-						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
-					</script>
-				</section>
-				
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
-				</section>
-				
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+    <meta name="description" content="Homebrew: the beer, not the package manager">
+    <meta name="author" content="Evan Farrar and Johnny Mukai">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 
-				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>SPACE</strong> to enter the slide overview.
-					</p>
-				</section>
+    <link rel="stylesheet" href="lib/zenburn.css">
+    <style>.fragment { margin-top: 40px; } </style>
+  </head>
+  <body>
+    <div id="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Homebrew</h1>
+          <h3 class="inverted">The beer, not the package manager</h3>
+          <script>
+            // Delicously hacky. Look away.
+            if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+            document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+          </script>
+        </section>
+        <section>
+          <section>
+            <h1>What's in Beer?</h1>
+            <ul>
+              <li>water</li>
+              <li>hops</li>
+              <li>barley</li>
+              <li>yeast</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Hops</h1>
+            <ul>
+              <li>bittering</li>
+              <li>preservative</li>
+              <li>flavor/aroma</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Water</h1>
+            <ul>
+              <li>hard or soft</li>
+              <li>minerals for yeast</li>
+              <li>~90% of beer</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Barley</h1>
+            <ul>
+              <li>malted</li>
+              <li>mashed</li>
+              <li>yeast food</li>
+              <li>starch -&gt; sugar -&gt; alcohol</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Yeast</h1>
+            <ul>
+              <li>eats sugar</li>
+              <li>produces co2 and alcohol as a byproduct</li>
+              <li>likes 45&deg;-80&deg;F</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h1>What is the process?</h1>
+            <ol>
+              <li>Mashing</li>
+              <li>Boiling</li>
+              <li>Fermenting</li>
+              <li>Conditioning</li>
+              <li>Consuming!</li>
+            </ol>
+          </section>
+          <section>
+            <h1>The Mash</h1>
+            <ul>
+              <li>takes place in a mash tun</li>
+              <li>enzymes in grain convert starch into simpler sugars</li>
+            </ul>
+            <p>grain + water + time(90 minutes) + temp(154&deg;F) =&gt; sweet wort</p>
+            <div class="fragment">
+              <h1>OR&hellip;<strong>USE EXTRACT!</strong></h1>
+              <p>pre-made wort concentrate</p>
+              <p>just skip this step</p>
+            </div>
+          </section>
+          <section>
+            <h1>The Boil</h1>
+            <ul>
+              <li>takes place in a kettle</li>
+              <li>hop isomerization</li>
+              <li>Malliard reaction</li>
+              <li>most importantly <strong>STERILIZATION</strong></li>
+            </ul>
+            <p>wort + hops + time(60 minutes) + temp(220&deg;) =&gt; hopped wort</p>
+          </section>
+          <section>
+            <h1>Fermentation</h1>
+            <p>wort + yeast + time(2 weeks-3years) + darkness + temp(65&deg;F) =&gt; flat beer</p>
+            <ul>
+              <li>takes place in a carboy</li>
+              <li>aerobic phase (reproduction)</li>
+              <li>anaerobic phase (alcohol production)</li>
+              <li>yeast converts ~80% of sugar to alcohol</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Conditioning</h1>
+            <p>sugar + flat beer + darkness + temp(65&deg;F) + time(2 weeks) =&gt; beer</p>
+            <ul>
+              <li>takes place in a bottle</li>
+              <li>carbonation with co2</li>
+              <li>yeast consumes final nutrients and settles to the bottom</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>12 Steps to Your First Beer</h1>
+          </section>
+          <section>
+            <h2>1. Gather</h2>
+            <div class="fragment">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>4 oz Cascade hops</li>
+                <li>7-9 lbs Liquid Malt Extract</li>
+                <li>1 pack Wyeast 1056 American Ale Yeast</li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h3>Equipment</h3>
+              <small>
+              <ul>
+                <li>3-8 gallon kettle</li>
+                <li>carboy</li>
+                <li>airlock (drilled stopper, vinyl tube, sanitizer, bucket)</li>
+                <li>sanitizer</li>
+                <li>siphon (vinyl tube)</li>
+                <li>~48 bottles</li>
+                <li>bottling bucket, vinyl tube, bottling wand</li>
+                <li>capper + crown caps</li>
+              </ul>
+              </small>
+            </div>
+          </section>
+          <section>
+            <h2>2. Boil as much water as you can</h2>
+            <p>3-6 gallons</p>
+            <div class="fragment">
+              <h2>3. Add LME, Boil 1 hour</h2>
+              <p>add hops, half at the beginning (&gt;60min), half at the end (&lt;10min)<p>
+            </div>
+          </section>
+          <section>
+            <h2>4. Cool Wort Quickly</h2>
+            <p>immerse the pot in cold water wait until it is &lt;85&deg;</p>
+            <div class="fragment">
+              <h2>5. Transfer wort, add yeast</h2>
+              <p>sanitize carboy (don't fear the foam)</p>
+              <p>kettle -&gt; carboy</p>
+              <p>add water to make 5 gallons</p>
+              <p>seal the airlock and put it somewhere dark and cool</p>
+            </div>
+          </section>
+          <section>
+            <h2>6. Wait</h2>
+            <p>the hardest part</p>
+            <div class="fragment">
+              <h2>7. Bottle</h2>
+              <ol>
+                <li>add 10 grams sugar</li>
+                <li>sanitize bottles</li>
+                <li>fill</li>
+                <li>cap</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h2>8. wait more</h2>
+            <p>keep bottles in a cool, dark place (but not the fridge)</p>
+            <div class="fragment">
+              <h1>Enjoy!</h1>
+              <ul>
+                <li>chill</li>
+                <li>pour gently into a glass</li>
+                <li>evaluate, share with beer snobs (us)</li>
+              </ul>
+            </div>
+          </section>
+        </section>
 
-				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
-					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-					</ul>
-				</section>
-					
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+        <section>
+          <h1>Questions?</h1>
+          <h3 class="inverted">BY Evan Farrar &amp; Johnny Mukai</h3>
+        </section>
+      </div>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-	var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-					document.body.style['MozPerspective'] !== undefined ||
-					document.body.style['perspective'] !== undefined;
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
 
-	function linkify( selector ) {
-	    if( supports3DTransforms ) {
-	        
-	        var nodes = document.querySelectorAll( selector );
+      <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+      <div class="progress"><span></span></div>
 
-	        for( var i = 0, len = nodes.length; i < len; i++ ) {
-	            var node = nodes[i];
+    </div>
 
-	            if( !node.className || !node.className.match( /roll/g ) ) {
-	                node.className += ' roll';
-	                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-	            }
-	        };
-	    }
-	}
+    <script src="js/reveal.js"></script>
+    <script src="lib/highlight.js"></script>
+    <script>
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+        query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
 
-	linkify( 'a' );
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-				
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
 
-				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
-				</section>
-				
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
-				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
-				</section>
-			</div>
+        // Display a presentation progress bar
+        progress: true,
 
-			<!-- The navigational controls UI -->
-			<aside class="controls">
-				<a class="left" href="#">&#x25C4;</a>
-				<a class="right" href="#">&#x25BA;</a>
-				<a class="up" href="#">&#x25B2;</a>
-				<a class="down" href="#">&#x25BC;</a>
-			</aside>
+        // If true; each slide will be pushed to the browser history
+        history: true,
 
-			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
-			<div class="progress"><span></span></div>
-			
-		</div>
-		
-		<script src="js/reveal.js"></script>
-		<script src="lib/highlight.js"></script>
-		<script>
-			// Parse the query string into a key/value object
-			var query = {};
-			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
-				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
-			} );
+        // Flags if mouse wheel navigation should be enabled
+        mouseWheel: true,
 
-			Reveal.initialize({
-				// Display controls in the bottom right corner
-				controls: true,
+        // Apply a 3D roll to links on hover
+        rollingLinks: true,
 
-				// Display a presentation progress bar
-				progress: true,
+        // UI style
+        theme: query.theme || 'default', // default/neon
 
-				// If true; each slide will be pushed to the browser history
-				history: true,
+        // Transition style
+        transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+      });
 
-				// Flags if mouse wheel navigation should be enabled
-				mouseWheel: true,
+      hljs.initHighlightingOnLoad();
+    </script>
 
-				// Apply a 3D roll to links on hover
-				rollingLinks: true,
-
-				// UI style
-				theme: query.theme || 'default', // default/neon
-
-				// Transition style
-				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
-			});
-
-			hljs.initHighlightingOnLoad();
-		</script>
-
-	</body>
+  </body>
 </html>
